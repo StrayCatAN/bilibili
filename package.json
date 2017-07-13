@@ -1,0 +1,21 @@
+{
+  "name": "elem",
+  "version": "1.0.0",
+  "description": "elemDemo",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "url-loader": "^0.5.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html5",
+    "elem"
+  ],
+  "author": "zyl",
+  "license": "ISC"
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page.css">
+    <title>paget</title>
+    <style>
+        /**{
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .container{
+            overflow: hidden;
+            position: relative;
+            left:20px;
+            width:440px;
+            height: 220px;
+            border:1px solid black;
+        }
+        .pic{
+            transform: translate(0px);
+            width:1320px;
+            height: 220px;
+            border:1px solid black;
+            display:flex;
+            z-index: 2;
+        }
+        .Img{
+            flex:1;
+        }
+        .panel{
+            position:absolute;
+            bottom:0;
+            right: 0;
+            width:60px;
+            height: 20px;
+            z-index: 1;
+            display: flex;
+        }
+        .point{
+            flex:1;
+            float: left;
+            border:1px solid gray;
+            border-radius: 50%;
+        }
+        .red{
+            background-color:red;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class = "pic">
+                <div class="Img">
+                    <img src="1.webp" alt="">
+                </div>
+                <div class="Img">
+                    <img src="2.webp" alt="">
+                </div>
+                <div class="Img">
+                    <img src="3.webp" alt="">
+                </div>
+            </div>
+            <div class = "piont">
+                <ul class="panel">
+                    <li class="point red">1</li>
+                    <li class="point">2</li>
+                    <li class="point">3</li>
+                </ul>
+            </div>
+    </div>
+    <div></div>
+
+    <script src = "jquery.js"></script>
+    <script>
+
+
+
+        var pointBtn = $(".panel li");
+        var pic = $(".pic");
+        var position = pic.position().left;
+        var point = $(".point");
+        function changeIndex(index) {
+            point.css("background-color","white");
+            if(index == 0) {
+                pic.css("transform","translate(0)");
+                point.eq(0).css("background-color","red");
+            }else if(index == 1){
+                pic.css("transform","translate(-440px)");
+                point.eq(1).css("background-color","red");
+            }else if(index == 2){
+                pic.css("transform","translate(-880px)");
+                point.eq(2).css("background-color","red");
+            }
+        }
+
+         pointBtn.on("click",function(e) {
+            index = $(this).index();
+            changeIndex(index);
+            return index;
+        })
+
+        setInterval(function(){
+             if(position <= -800) {
+                 index = 0;
+                 position = 0;
+             }else if(position == -440){
+                index = 2;
+                position = -880;
+             }else if(position == 0) {
+                 index = 1;
+                 position = -440;
+             }
+            pic.css("transform", "translate(" + position + "px)");
+            point.removeClass("red");
+            point.eq(index).addClass("red");
+        },3000)
+
+
+
+    // function page() {
+    //     if(windoe.pageXOffset) {
+    //         return {
+    //             x:window.pageXOffset,
+    //             y : window.pageYOffset
+    //         }
+    //     }
+    //     return {
+    //         x : document.body.scrollLeft + document.documentElement.scrollLeft,
+    //         y : document.body.scrollTop + document.documentElement.scrollTop
+    //     }
+    // }
+
+    // function getViewPortOffset() {
+    //     if(window.innerHeight) {
+    //         return {
+    //             w : window.innerWidth,
+    //             h : window.innerHeight
+    //         }
+    //     }
+    //     if(document.compatMode == "CSS1Compat") {
+    //         return {
+    //             w : document.documentElement.scrollWidth,
+    //             h : document.documentElement.scrollHeight
+    //             }
+    //             }else{
+    //             return {
+    //                 w : document.body.scrollWidth,
+    //                 h : document.body.scrollHeight
+    //         }
+    //     }
+    // }
+    </script>
+</body>
+</html>

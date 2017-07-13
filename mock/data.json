@@ -1,0 +1,68 @@
+[
+    {
+        "name" : "东京食尸鬼",
+        "img" : "/img/data1.jpg",
+        "video" : "/source/video1.mp4",
+        "tag" : "#网络游戏#",
+        "sign" : "慕凡：打脸是个技术活。",
+        "UP" : "慕凡",
+        "view" : "5424",
+        "comment" : "7447",
+        "viewing" : "64"
+    },
+    {
+        "name" : "太乙仙魔录之灵飞纪",
+        "img" : "/img/data2.jpg",
+        "video" : "/source/video2.mp4",
+        "tag" : "#电子竞技#",
+        "sign" : "职业Bug选手！",
+        "UP" : "piziang",
+        "view" : "8725",
+        "comment" : "502",
+        "viewing" : "21"
+    },
+    {
+        "name" : "嗜谎之神",
+        "img" : "/img/data3.jpg",
+        "video" : "/source/video3.mp4",
+        "tag" : "#手游直播#",
+        "sign" : "二狗解说带你看懂王者荣耀",
+        "UP" : "梦醒三生梦",
+        "view" : "7.0万",
+        "comment" : "2360",
+        "viewing" : "20"
+    },
+    {
+        "name" : "暴基枪手之AK西游",
+        "img" : "/img/data4.jpg",
+        "video" : "/source/video4.mp4",
+        "tag" : "#手游直播#",
+        "sign" : "【王者荣耀】打野专场",
+        "UP" : "猫儿爱丽丝",
+        "view" : "2.5万",
+        "comment" : "547",
+        "viewing" : "491"
+    },
+    {
+        "name" : "异世界食堂",
+        "img" : "/img/data5.jpg",
+        "video" : "/source/video5.mp4",
+        "tag" : "#单机联机#",
+        "sign" : "吹牛净小空",
+        "UP" : "从不吹牛",
+        "view" : "1.2万",
+        "comment" : "678",
+        "viewing" : "8"
+    },
+    {
+        "name" : "妖怪公寓的优雅日常",
+        "img" : "/img/data6.jpg",
+        "video" : "/source/video6.mp4",
+        "tag" : "#生活娱乐#",
+        "sign" : "复活以后",
+        "UP" : "戏子",
+        "view" : "8202",
+        "comment" : "5711",
+        "viewing" : "986"
+    }
+]
